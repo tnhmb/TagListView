@@ -239,7 +239,7 @@ open class TagListView: UIView {
             tagView.frame.size = tagView.intrinsicContentSize
             tagViewHeight = tagView.frame.height
             
-            if currentRowTagCount == 0 || currentRowWidth + tagView.frame.width > frame.width || currentRowTagCount < 4{
+            if currentRowTagCount == 0 || currentRowTagCount > 3{
                 currentRow += 1
                 currentRowWidth = 0
                 currentRowTagCount = 0
